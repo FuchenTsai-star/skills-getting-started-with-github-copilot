@@ -58,20 +58,117 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #e1e6f0;
+  border-left: 4px solid #3949ab;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff 0%, #f7f8ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.08);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 35, 126, 0.13);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.activity-description {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.activity-detail {
+  margin-bottom: 6px;
+  color: #424a5a;
+  font-size: 0.95rem;
+}
+
+.availability {
+  color: #1b6b46;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding: 12px 14px;
+  border-radius: 7px;
+  background-color: #eef1fb;
+}
+
+.participants-section h5 {
+  margin-bottom: 7px;
+  color: #283593;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  padding: 0;
+  list-style: none;
+  color: #3d4658;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(57, 73, 171, 0.12);
+}
+
+.participants-list li:last-child {
+  border-bottom: 0;
+}
+
+.participants-list li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #f0c8cc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #b42332;
+}
+
+.remove-participant-button:hover {
+  background-color: #fff0f1;
+  border-color: #d98b93;
+}
+
+.remove-participant-button:focus-visible {
+  outline: 3px solid rgba(180, 35, 50, 0.3);
+  outline-offset: 2px;
+}
+
+.remove-participant-button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.no-participants {
+  color: #70798a;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .form-group {
